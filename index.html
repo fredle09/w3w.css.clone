@@ -40,6 +40,7 @@
         </div>
         <!-- End: search-button-->
       </div>
+
       <div id="slider">
         <div class="text-content">
           <h2 class="text-heading">Chicago</h2>
@@ -67,18 +68,18 @@
             veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
             ea commodo consequat.
           </p>
-          <div id="member-list">
-            <div class="member-item">
+          <div id="member-list" class="row">
+            <div class="col col-3 text-center">
               <p class="member-name">Name</p>
               <img src="./assets/imgs/bandmember.jpg" alt="" />
             </div>
 
-            <div class="member-item">
+            <div class="col col-3 text-center">
               <p class="member-name">Name</p>
               <img src="./assets/imgs/bandmember.jpg" alt="" />
             </div>
 
-            <div class="member-item">
+            <div class="col col-3 text-center">
               <p class="member-name">Name</p>
               <img src="./assets/imgs/bandmember.jpg" alt="" />
             </div>
@@ -113,8 +114,8 @@
               </li>
             </ul>
 
-            <div class="place-list">
-              <div class="place-item">
+            <div class="row place-list">
+              <div class="col col-3 place-item">
                 <img src="./assets/imgs/newyork.jpg" alt="" />
                 <!-- <div class="img"></div> -->
                 <div class="place-content">
@@ -128,7 +129,7 @@
                   </button>
                 </div>
               </div>
-              <div class="place-item">
+              <div class="col col-3 place-item">
                 <img src="./assets/imgs/paris.jpg" alt="" />
                 <!-- <div class="img"></div> -->
 
@@ -143,7 +144,7 @@
                   </button>
                 </div>
               </div>
-              <div class="place-item">
+              <div class="col col-3 place-item">
                 <!-- <div class="img"></div> -->
                 <img src="./assets/imgs/sanfran.jpg" alt="" />
                 <div class="place-content">
@@ -157,7 +158,6 @@
                   </button>
                 </div>
               </div>
-              <div class="clear"></div>
             </div>
           </div>
         </div>
@@ -166,8 +166,34 @@
         <div class="section-content">
           <h2 class="section-heading">CONTACT</h2>
           <p class="section-sub-heading">Fan? Drop a note!</p>
+          <div class="row section-body">
+            <div class="col col-2">
+              <p><i class="ti-location-pin"></i>Chicago, US</p>
+              <p><i class="ti-mobile"></i>Phone: +00 151515</p>
+              <p><i class="ti-email"></i>Email: mail@mail.com</p>
+            </div>
+
+            <div class="col col-2">
+              <form action="" id="form-contact">
+                <div class="row">
+                  <div class="col col-2">
+                    <input type="text" required name="" id="" class="form-control border" placeholder="Name">
+                  </div>
+
+                  <div class="col col-2">
+                    <input type="email" required email="" id="" class="form-control border" placeholder="Email">
+                  </div>
+                </div>
+                <div class="row mt-8">
+                  <div class="col col-1">
+                    <input type="text" required name="" id="" class="form-control border" placeholder="Message">
+                  </div>
+                </div>
+                <input id="form-contact-btn-send" type="submit" value="SEND">
+              </form>
+            </div>
+          </div>
         </div>
-      </div>
 
       <div id="footer"></div>
     </div>
@@ -216,7 +242,6 @@
             <i class="ti-close"></i>
           </div>
           <div class="modal-help">Need <a href="">help?</a></div>
-          <div class="clear"></div>
         </div>
       </div>
     </div>
