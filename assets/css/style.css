@@ -344,6 +344,7 @@ html {
   max-width: calc(100% - 32px);
   margin: 100px auto 0;
   position: relative;
+  animation: modalFadeIn 0.4s;
 }
 
 .modal-header-close {
@@ -434,4 +435,13 @@ html {
 
 .modal-help a {
   color: #2196f3;
+}
+
+@keyframes modalFadeIn {
+  from {
+    transform: translateY(-80px);
+  }
+  to {
+    transform: translateY(0px);
+  }
 }
