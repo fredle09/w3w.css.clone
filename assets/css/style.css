@@ -383,7 +383,42 @@ html {
   color: #000;
 }
 
+#section-map {
+  width: 100%;
+  height: auto;
+}
+
+#section-map img {
+  width: 100%;
+  filter: grayscale(50%);
+}
+
 #footer {
+  padding: 64px 0;
+}
+
+#footer-icons {
+  text-align: center;
+}
+
+#footer-icons a {
+  text-decoration: none;
+  font-size: 24px;
+  color: #333;
+}
+
+#footer-icons a:hover {
+  color: #ccc;
+}
+
+#footer-copyright {
+  font-size: 15px;
+  /* display: inline-block; */
+  line-height: 1.5;
+  /* margin-left: auto; */
+  /* margin-right: auto; */
+  text-align: center;
+  margin: 15px 0;
 }
 
 .modal {
