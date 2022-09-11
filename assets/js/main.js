@@ -9,20 +9,20 @@ for (const buyBtn of buyBtns) {
   buyBtn.addEventListener("click", () => {
     modal.classList.add("open");
   });
+}
 
-  // Close the modal when the user clicks on the close-btn
-  for (const modalClose of modalCloses) {
-    modalClose.addEventListener("click", () => {
-      modal.classList.remove("open");
-    });
-  }
-
-  // Close the modal when the user clicks outside of the modal-container
-  modal.addEventListener("click", () => {
+// Close the modal when the user clicks on the close-btn
+for (const modalClose of modalCloses) {
+  modalClose.addEventListener("click", () => {
     modal.classList.remove("open");
   });
-
-  modalContainer.addEventListener("click", (event) => {
-    event.stopPropagation();
-  });
 }
+
+// Close the modal when the user clicks outside of the modal-container
+modal.addEventListener("click", () => {
+  modal.classList.remove("open");
+});
+
+modalContainer.addEventListener("click", (event) => {
+  event.stopPropagation();
+});
